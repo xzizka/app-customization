@@ -9,6 +9,11 @@ spec:
     accessLogFile: /dev/stdout # This line will be preserved
     enableTracing: true # This line will be preserved
   components:
+    pilot:
+      k8s:
+        resources:
+          requests:
+            memory: 3072Mi
     egressGateways: 
     - name: istio-egressgateway # This line will be preserved
       enabled: true # This line will be preserved
