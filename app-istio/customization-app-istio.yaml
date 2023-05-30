@@ -1,10 +1,10 @@
-apiVersion: install.istio.io/v1alpha1 # This line will be preserved
-kind: IstioOperator # This line will be preserved
+apiVersion: install.istio.io/v1alpha1 
+kind: IstioOperator 
 spec:
   profile: default # This line will be preserved
   hub: gcr.io/istio-testing # This line will be preserved
   tag: latest # This line will be preserved
-  revision: 1-17-2 # This line will be preserved
+  revision: 1-17-3 # This line will be preserved
   meshConfig:
     accessLogFile: /dev/stdout # This line will be preserved
     enableTracing: true # This line will be preserved
