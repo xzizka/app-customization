@@ -1,0 +1,14 @@
+apiVersion: install.istio.io/v1alpha1 # This line will be preserved
+kind: IstioOperator # This line will be preserved
+spec:
+  profile: default # This line will be preserved
+  hub: gcr.io/istio-testing # This line will be preserved
+  tag: latest # This line will be preserved
+  revision: 1-17-2 # This line will be preserved
+  meshConfig:
+    accessLogFile: /dev/stdout # This line will be preserved
+    enableTracing: true # This line will be preserved
+  components:
+    egressGateways: 
+    - name: istio-egressgateway # This line will be preserved
+      enabled: true # This line will be preserved
